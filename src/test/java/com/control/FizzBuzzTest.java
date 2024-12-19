@@ -50,5 +50,16 @@ public class FizzBuzzTest {
         // then
         assertEquals("Buzz",result);
     }
+    @Test
+    void de_retourne_fizzBuzz_pour_15() {
+        // given
+        FizzBuzz fizzBuzz = new FizzBuzz();
+
+        // when
+        String result = fizzBuzz.de(15);
+
+        // then
+        assertEquals("FizzBuzz",result);
+    }
 }
 
