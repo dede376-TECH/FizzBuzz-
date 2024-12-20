@@ -23,7 +23,7 @@ public class FizzBuzzTest {
         FizzBuzz fizzBuzz = new FizzBuzz();
 
         // when
-        String result = fizzBuzz.de(1);
+        String result = fizzBuzz.de(2);
 
         // then
         assertEquals("2",result);
@@ -60,6 +60,15 @@ public class FizzBuzzTest {
 
         // then
         assertEquals("FizzBuzz",result);
+    }
+    @Test
+    void de_retourne_fizzbuzz_pour_30() {
+        //given
+        FizzBuzz obj = new FizzBuzz();
+        // when
+        String result = obj.de(30);
+        //then
+        assertEquals("FizzBuzz" , result );
     }
 }
 
